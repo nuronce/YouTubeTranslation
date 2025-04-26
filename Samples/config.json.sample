@@ -1,0 +1,12 @@
+{
+    "YOUTUBE": {
+            "APIKEY":"xxxx",
+            "CHANNELIDs": [
+                "UCT_xxxx"]
+    },
+    "Coqui-TTS": {
+        "model": "tts_models/multilingual/multi-dataset/xtts_v2"
+    },
+    "rootTranslations" : "Translations"
+}
+}

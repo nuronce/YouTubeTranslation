@@ -1,0 +1,6 @@
+*.wav
+config.json
+venv/
+.env/
+.venv/
+Translations/
