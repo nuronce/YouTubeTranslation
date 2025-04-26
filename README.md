@@ -24,8 +24,9 @@ To run this project, ensure you have the following installed:
    ```bash
    git clone https://github.com/nuronce/YouTubeTranslation.git
    cd YouTubeTranslation
-
-for CPU version
+2. get the requirements
+   for CPU version
+```bash
 pip install -r requirements_CPU.txt
-
+   for GPU version
 currently for GPU version install the CPU version and then instally pytorch based on your needs.

@@ -9,6 +9,7 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from TTS.api import TTS
 import os
 from pydub import AudioSegment
+from datetime import datetime
 
 def get_video_ids_from_channel(api_key, channel_id):
     from googleapiclient.discovery import build
@@ -65,6 +66,8 @@ def process_transcripts(video_ids):
                 with open(f"{root_dir}{video_id}.{original_language}.json", "w") as json_file:
                     json.dump(json_data, json_file, indent=4)
 
+            print(f"Found transcript in {original_language} for video ID: {video_id}")
+
             if original_language == 'fr':           
                 process_language(json_data, 'en')
             else:
@@ -101,13 +104,17 @@ def process_language(source_json, target_language):
     video_id = source_json['video_id']
     root_dir = f"{config['rootTranslations']}/{video_id}/"
 
+    print(f"Processing Language {target_language} for video ID: {video_id}: {datetime.now()}")
+            
     try:
         json_data = ""
         if os.path.exists(f"{root_dir}{target_language}/{video_id}.{target_language}.wav"):
+            print(f"Already exists {target_language} audio for video ID: {video_id}")
             return
         if os.path.exists(f"{root_dir}{target_language}/{video_id}.{target_language}.json"):
-                with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r") as json_file:
-                    json_data = json.load(json_file)
+            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r") as json_file:
+                json_data = json.load(json_file)
+            print(f"Found Translation for {target_language} for video ID: {video_id}")
         else:
             os.makedirs(f"{root_dir}{target_language}/", exist_ok=True)  # Create directory if it doesn't exist
             # Translate to target_language
@@ -135,7 +142,8 @@ def process_language(source_json, target_language):
                                  
                     translated_text.append({"text":translated,'original_duration':snip['duration']})
                     trans_text = ""
-    
+            print(f"Translated for {target_language} for video ID: {video_id}: {datetime.now()}")
+
             json_data = {'video_id':video_id,'original_language':source_json['language'],'language':target_language,'snips':translated_text}
 
             with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "w") as json_file:
@@ -148,6 +156,7 @@ def process_language(source_json, target_language):
         for key, value in enumerate(json_data['snips']):
             if os.path.exists(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"):
                 continue
+            print(f"Generating voice file {key} for {target_language} for video ID: {video_id}: {datetime.now()}")
             # Generate voice files
             tts.tts_to_file(text=value['text'], file_path=f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"
                             ,language=target_language  # Specify the language
@@ -163,17 +172,20 @@ def process_language(source_json, target_language):
                 shh = AudioSegment.silent(duration=silence_duration)
                 tts_audio = tts_audio.append(shh, crossfade=min(len(shh), len(tts_audio)))
                 #tts_audio.export(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav", format="wav")  
-                
+            
+            print(f"Generated voice file {key} for {target_language} for video ID: {video_id}: {datetime.now()}")
             audio_parts.append(tts_audio)                  
+        print(f"Generated all voice files for {target_language} for video ID: {video_id}: {datetime.now()}")
 
         # Combine the voice files into one
         combined = sum(audio_parts)
         combined.export(f"{root_dir}{target_language}/{video_id}.{target_language}.wav", format="wav")
                           
-        print(f"Generated voice file for video ID: {video_id} in {target_language}")
+        print(f"Generated voice file for video ID: {video_id} in {target_language}: {datetime.now()}")
         
         for f in file_parts:
             os.remove(f)
+        print(f"Removed voice part files for video ID: {video_id} in {target_language}: {datetime.now()}")
 
     except Exception as e:
         print(f"Error processing video ID {video_id}: {e}")
@@ -194,11 +206,15 @@ config = load_config()
 
 # Get device
 device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
 
 tts = TTS(model_name=config['Coqui-TTS']['model']).to(device)
 
+print(f"Using TTS model: {config['Coqui-TTS']['model']}")
+
 for channel_id in config['YOUTUBE']['CHANNELIDs']:
+    print(f"Processing channel ID: {channel_id}")
     video_ids = get_video_ids_from_channel(config['YOUTUBE']['APIKEY'], channel_id)
-    #video_ids = ["dwXnq5tIqI8"]  # Replace with actual video IDs for testing
+    print(f"Found {len(video_ids)} videos in channel ID: {channel_id}")
     process_transcripts(video_ids)
 
