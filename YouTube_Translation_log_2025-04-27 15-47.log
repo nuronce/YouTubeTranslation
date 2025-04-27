@@ -29,3 +29,315 @@ https://www.youtube.com:443 "GET /api/timedtext?v=hsnLi4RqP1w&ei=4IkOaIChIf_sy_s
 {"key": 11, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:47:44.568583Z"}
 Text split into sentences.
 Input: ["N'y reste pas très longtemps et mais il est transformé en un autre composé appelé 25 hydroxy vitamine D et c'est votre sang la forme intermédiaire la forme intermédiaire qui reste dans votre sang pendant des semaines d'accord et c'est un"]
+Processing time: 40.590
+Real-time factor: 2.213
+{"key": 11, "Time": 206.56316666666666, "Start": 187.36, "event": "Timing", "timestamp": "2025-04-27T19:48:25.248274Z"}
+{"key": 11, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:48:25.248594Z"}
+{"key": 12, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:48:25.248594Z"}
+Text split into sentences.
+Input: ["Bonne et une mauvaise chose car elle reste pendant longtemps, mais elle n'est pas très accessible à ces tissus qui en ont besoin"]
+Processing time: 15.168
+Real-time factor: 2.057
+{"key": 12, "Time": 223.41716666666667, "Start": 204.159, "event": "Timing", "timestamp": "2025-04-27T19:48:40.447867Z"}
+{"key": 12, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:48:40.448835Z"}
+{"key": 13, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:48:40.448835Z"}
+Text split into sentences.
+Input: ["Euh, le composé est transformé en un autre composé qui est vraiment l'une des hormones les plus puissantes connues et c'est euh la 125 Dihydroxy Vitamin D et c'est euh c'est ce qui motive toutes ces fonctions de gène dans tous ces éléments"]
+Processing time: 50.308
+Real-time factor: 2.123
+{"key": 13, "Time": 230.19116666666667, "Start": 218.4, "event": "Timing", "timestamp": "2025-04-27T19:49:30.830233Z"}
+{"key": 13, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:49:30.830233Z"}
+{"key": 14, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:49:30.830233Z"}
+Text split into sentences.
+Input: ["tissus donc celui-ci lorsque vous allez chez le médecin et passez votre test sanguin, vous ne regardez pas la forme active, c'est une forme inactive qui peut rester dans le sang pendant quelques semaines, c'est le oui c'est le"]
+Processing time: 30.789
+Real-time factor: 2.024
+{"key": 14, "Time": 251.9625, "Start": 235.68, "event": "Timing", "timestamp": "2025-04-27T19:50:01.669260Z"}
+{"key": 14, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:50:01.669260Z"}
+{"key": 15, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:50:01.669260Z"}
+Text split into sentences.
+Input: ["réservoir ok c'est le réservoir de vitamine D qui est mesuré, puis il se transforme en forme active ou une certaine quantité se transformera en forme active, mais comment cela se rapporte-t-il à ces deux systèmes différents"]
+Processing time: 34.926
+Real-time factor: 2.039
+{"key": 15, "Time": 265.9365, "Start": 250.2, "event": "Timing", "timestamp": "2025-04-27T19:50:36.648403Z"}
+{"key": 15, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:50:36.648403Z"}
+{"key": 16, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:50:36.648403Z"}
+Text split into sentences.
+Input: ["Eh bien donc le dans cette forme intermédiaire, la forme de réservoir peut se transformer en forme active dans le rein qui est très réglementée et c'est ce qui a fait ce qui régule le calcium sanguin, cette forme intermédiaire peut également aller"]
+Processing time: 41.878
+Real-time factor: 2.061
+{"key": 16, "Time": 281.6705, "Start": 267.36, "event": "Timing", "timestamp": "2025-04-27T19:51:18.598532Z"}
+{"key": 16, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:51:18.598532Z"}
+{"key": 17, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:51:18.598532Z"}
+Text split into sentences.
+Input: ["dans n'importe quelle cellule du corps correct et être transformé en forme et fonction actif dans la cellule donnée, que ce soit une cellule cancéreuse pour empêcher le cancer de progresser ou des cellules immunitaires pour les faire faire fonctionner dans le fonctionnement approprié"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 43.098
+Real-time factor: 2.319
+{"key": 17, "Time": 300.3378333333333, "Start": 284.12, "event": "Timing", "timestamp": "2025-04-27T19:52:01.763927Z"}
+{"key": 17, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:52:01.764607Z"}
+{"key": 18, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:52:01.764607Z"}
+Text split into sentences.
+Input: ["La mode et euh aussi le problème avec cette forme intermédiaire est qu'il n'est pas très accessible à ces cellules, c'est c'est que c'est lié à cette protéine qui le maintient à l'écart, c'est pourquoi il dure si longtemps dans le sang"]
+Processing time: 33.939
+Real-time factor: 2.195
+{"key": 18, "Time": 317.4158333333333, "Start": 303.16, "event": "Timing", "timestamp": "2025-04-27T19:52:35.777252Z"}
+{"key": 18, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:52:35.779077Z"}
+{"key": 19, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:52:35.779077Z"}
+Text split into sentences.
+Input: ["Ainsi, le composé parent de celui que vous prenez dans un supplément s'avère qu'il est vraiment important car cette forme peut entrer dans l'une de ces cellules et être activée tout au long de la chaîne jusqu'à la forme active"]
+Processing time: 34.661
+Real-time factor: 2.220
+{"key": 19, "Time": 331.62449999999995, "Start": 319.32, "event": "Timing", "timestamp": "2025-04-27T19:53:10.485976Z"}
+{"key": 19, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:53:10.485976Z"}
+{"key": 20, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:53:10.485976Z"}
+Text split into sentences.
+Input: ["Le problème est que cette forme disparaît dans une journée ouais donc elle doit être reconstituée tous les jours pour avoir la pleine fonction du présent de vitamine, c'est très compliqué, c'est pourquoi beaucoup de médecins ne prêtent pas attention à cela"]
+Processing time: 29.607
+Real-time factor: 2.027
+{"key": 20, "Time": 345.9718333333333, "Start": 335.199, "event": "Timing", "timestamp": "2025-04-27T19:53:40.151620Z"}
+{"key": 20, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:53:40.151620Z"}
+{"key": 21, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:53:40.151620Z"}
+Text split into sentences.
+Input: ["ou les scientifiques aussi, donc c'est ce que je veux entrer dans ce point que vous venez de mentionner parce que vous avez les différents types et que lorsque les gens font tester le sang, ils supposent que"]
+Processing time: 28.376
+Real-time factor: 2.050
+{"key": 21, "Time": 359.3911666666666, "Start": 352.24, "event": "Timing", "timestamp": "2025-04-27T19:54:08.574481Z"}
+{"key": 21, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:54:08.574481Z"}
+{"key": 22, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:54:08.574481Z"}
+Text split into sentences.
+Input: ["Il y a un système oh j'en ai assez dans le sang, donc tout va être satisfait, mais ce n'est pas nécessairement vrai non c'est vrai et à cause de la forme qui est mesurable, c'est important bien c'est le réservoir plus important"]
+Processing time: 28.367
+Real-time factor: 2.028
+{"key": 22, "Time": 372.1064999999999, "Start": 365.039, "event": "Timing", "timestamp": "2025-04-27T19:54:36.993009Z"}
+{"key": 22, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:54:36.993009Z"}
+{"key": 23, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:54:36.993009Z"}
+Text split into sentences.
+Input: ['Pour le maintien du calcium sanguin et du squelette, mais pour les autres fonctions, la seule façon dont vous pouvez vous, vous pouvez être sûr que vous avez des quantités adéquates est de la prendre chaque jour ou de vous mettre au soleil tous les jours et']
+Processing time: 33.513
+Real-time factor: 2.016
+{"key": 23, "Time": 384.9604999999999, "Start": 380.68, "event": "Timing", "timestamp": "2025-04-27T19:55:10.561669Z"}
+{"key": 23, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:55:10.561669Z"}
+{"key": 24, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:55:10.561669Z"}
+Text split into sentences.
+Input: ["Bien sûr, ce n'est vraiment pas faisable pour de nombreuses raisons, donc la consommation orale de vitamine D sur un quotidien ou au minimum sur une base hebdomadaire est importante parce que c'est ce qui est la forme de base et la forme de base et"]
+Processing time: 30.533
+Real-time factor: 2.028
+{"key": 24, "Time": 400.23583333333323, "Start": 396.88, "event": "Timing", "timestamp": "2025-04-27T19:55:41.153556Z"}
+{"key": 24, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:55:41.153556Z"}
+{"key": 25, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:55:41.153556Z"}
+Text split into sentences.
+Input: ["Cette forme va et vient très rapidement wow, donc cela a à voir avec la moitié de la vie et um qu'il décompose une partie descend rapidement quelques restes là-dedans, alors maintenant, dans l'une de vos vidéos, vous vouliez que vous ayez traversé un tas d'études et vous"]
+Processing time: 31.247
+Real-time factor: 2.054
+{"key": 25, "Time": 414.07116666666656, "Start": 414.4, "event": "Timing", "timestamp": "2025-04-27T19:56:12.446381Z"}
+{"key": 25, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 147.97500000003936, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T19:56:12.446381Z"}
+{"key": 25, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:56:12.447381Z"}
+{"key": 26, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:56:12.447381Z"}
+Text split into sentences.
+Input: ["ont montré que les gens pas à pas comme un nombre d'études qui ont échoué qui n'ont montré aucune réponse avec la vitamine D et vous avez corrélé cela avec euh, c'est parce qu'ils ne laissent que les gens le prendre une fois par semaine ou une fois par mois"]
+Processing time: 31.837
+Real-time factor: 2.059
+{"key": 26, "Time": 428.34091666666654, "Start": 432.319, "event": "Timing", "timestamp": "2025-04-27T19:56:44.336418Z"}
+{"key": 26, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1790.1375000000628, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T19:56:44.336418Z"}
+{"key": 26, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:56:44.338417Z"}
+{"key": 27, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:56:44.338417Z"}
+Text split into sentences.
+Input: ['Versus oui enquête et même été une étude sur Skeleton où ils l\'ont pris une fois par an comme un million d\'unités une fois par an, puis ils ont dit "eh bien, cela n\'a pas très bien fonctionné".', "Et cela continue d'être cité dans certains faits comme"]
+Processing time: 31.906
+Real-time factor: 1.938
+{"key": 27, "Time": 446.12966666666654, "Start": 448.16, "event": "Timing", "timestamp": "2025-04-27T19:57:16.307602Z"}
+{"key": 27, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 913.6500000000694, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T19:57:16.307602Z"}
+{"key": 27, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:57:16.308603Z"}
+{"key": 28, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:57:16.309604Z"}
+Text split into sentences.
+Input: ["Étant nuisible, c'est idiot oh mon Dieu si quelqu'un prend un million d'umes de vitamine D juste une fois um, je pense que euh après une journée, il descend à la moitié, puis le jour plus tard, il descend à un quart à droite, il se brise juste en quelque sorte des pauses"]
+Processing time: 54.716
+Real-time factor: 2.115
+{"key": 28, "Time": 463.0833333333332, "Start": 461.599, "event": "Timing", "timestamp": "2025-04-27T19:58:11.100219Z"}
+{"key": 28, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:58:11.100219Z"}
+{"key": 29, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:58:11.100219Z"}
+Text split into sentences.
+Input: ["vers le bas et puis s'en aller ou ou ça devient ouais, cela augmentera la forme intermédiaire pendant un certain temps, mais c'est très horriblement inefficace."]
+Processing time: 19.437
+Real-time factor: 1.953
+{"key": 29, "Time": 486.8493333333332, "Start": 479.199, "event": "Timing", "timestamp": "2025-04-27T19:58:30.572709Z"}
+{"key": 29, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:58:30.572709Z"}
+{"key": 30, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:58:30.572709Z"}
+Text split into sentences.
+Input: ['Efficace une fois par semaine, il est moins efficace une fois par mois encore moins efficace, alors wow en ce qui concerne la recherche sur cette um, que vous savez que vous avez tous ces gens de la plupart des chercheurs là-bas']
+Processing time: 27.568
+Real-time factor: 1.999
+{"key": 30, "Time": 495.9913333333332, "Start": 492.4, "event": "Timing", "timestamp": "2025-04-27T19:58:58.191152Z"}
+{"key": 30, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:58:58.191152Z"}
+{"key": 31, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:58:58.191152Z"}
+Text split into sentences.
+Input: ["Ils regardent en quelque sorte U Vitamin D juste lié à l'os et au calcium, ils sont en quelque sorte presque prétend comme cet autre système n'existe pas est ce vrai ouais, oui, je veux dire que vous avez d'abord"]
+Processing time: 41.501
+Real-time factor: 2.095
+{"key": 31, "Time": 508.6639999999999, "Start": 510.24, "event": "Timing", "timestamp": "2025-04-27T19:59:39.768494Z"}
+{"key": 31, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 709.200000000061, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T19:59:39.768494Z"}
+{"key": 31, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:59:39.770572Z"}
+{"key": 32, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:59:39.770572Z"}
+Text split into sentences.
+Input: ['Pour accepter le fait que la vitamine D a des fonctions au-delà']
+Processing time: 8.483
+Real-time factor: 1.826
+{"key": 32, "Time": 528.2800833333332, "Start": 524.64, "event": "Timing", "timestamp": "2025-04-27T19:59:48.285234Z"}
+{"key": 32, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:59:48.285234Z"}
+{"key": 33, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:59:48.286236Z"}
+Text split into sentences.
+Input: ["D ils le donnent à des gens qui dans un essai randomisé qui qui n'en ont pas besoin, vous savez, c'est comme euh dans la newsletter The Thompson que je vous ai mentionné quand j'en discutais avec l'auteur de cela"]
+Processing time: 33.443
+Real-time factor: 1.946
+{"key": 33, "Time": 532.5474166666665, "Start": 540.2, "event": "Timing", "timestamp": "2025-04-27T20:00:21.787435Z"}
+{"key": 33, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 3443.662500000073, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:00:21.787435Z"}
+{"key": 33, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:00:21.790436Z"}
+{"key": 34, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:00:21.790436Z"}
+Text split into sentences.
+Input: ["Papier donc l'étalon-or pour tous les essais de médicaments ou les essais de contrôle randomisés ok où dire que vous avez un médicament de cholestérol et que vous souhaitez tester si cela déprime vraiment le cholestérol sérique si vous le prenez pour la compagnie pharmaceutique"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 32.573
+Real-time factor: 1.959
+{"key": 34, "Time": 555.2218333333332, "Start": 555.24, "event": "Timing", "timestamp": "2025-04-27T20:00:54.411956Z"}
+{"key": 34, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 8.175000000079535, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:00:54.411956Z"}
+{"key": 34, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:00:54.412958Z"}
+{"key": 35, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:00:54.413957Z"}
+Text split into sentences.
+Input: ["assemble que rassemble une population de personnes et administrer la moitié de ces personnes le médicament et la moitié de ces personnes obtiennent un placebo, puis ils analysent les données et et le regardent bien sûr qu'ils sont dans la plupart des cas c'est"]
+Processing time: 26.744
+Real-time factor: 1.960
+{"key": 35, "Time": 570.5133333333332, "Start": 573.279, "event": "Timing", "timestamp": "2025-04-27T20:01:21.214494Z"}
+{"key": 35, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1244.550000000055, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:01:21.214494Z"}
+{"key": 35, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:01:21.216582Z"}
+{"key": 36, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:01:21.216582Z"}
+Text split into sentences.
+Input: ["C'est un succès et c'est ainsi que les essais de médicaments sont exécutés, mais le médicament que vous donnez à ces personnes le corps ne l'a jamais vu, ils n'en ont pas un niveau de base contrairement aux nutriments non seulement à la vitamine D mais à tout essai en nutriments"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 43.308
+Real-time factor: 2.055
+{"key": 36, "Time": 585.5362499999999, "Start": 592.48, "event": "Timing", "timestamp": "2025-04-27T20:02:04.588652Z"}
+{"key": 36, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 3124.6875000000614, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:02:04.588652Z"}
+{"key": 36, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:02:04.604439Z"}
+{"key": 37, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:02:04.604439Z"}
+Text split into sentences.
+Input: ['impossible dans ce pays de faire un véritable essai randomisé parce que la population avec laquelle vous avez affaire a certaines personnes ont très peu de gens, mais quand vous les prenez simplement au hasard et et randomisez-les et randomisez']
+Processing time: 29.447
+Real-time factor: 1.949
+{"key": 37, "Time": 611.1459999999998, "Start": 609.68, "event": "Timing", "timestamp": "2025-04-27T20:02:34.108193Z"}
+{"key": 37, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:02:34.108193Z"}
+{"key": 38, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:02:34.108193Z"}
+Text split into sentences.
+Input: ["Donnez à ces gens la moitié d'entre eux un niveau de vitamine D, souvent pas assez et que cette autre moitié n'obtient que un placebo ou un placebo dans ce pays signifie qu'ils doivent obtenir la dose quotidienne standard afin qu'ils n'obtiennent même pas"]
+Processing time: 35.755
+Real-time factor: 2.005
+{"key": 38, "Time": 625.0239999999999, "Start": 627.2, "event": "Timing", "timestamp": "2025-04-27T20:03:09.927347Z"}
+{"key": 38, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 979.2000000000712, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:03:09.927347Z"}
+{"key": 38, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:03:09.929434Z"}
+{"key": 39, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:03:09.929434Z"}
+Text split into sentences.
+Input: ["zéro et ce qui se passe, c'est que c'est une étude horrible"]
+Processing time: 7.382
+Real-time factor: 1.827
+{"key": 39, "Time": 643.3668333333333, "Start": 643.8, "event": "Timing", "timestamp": "2025-04-27T20:03:17.330787Z"}
+{"key": 39, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 194.925000000012, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:03:17.331787Z"}
+{"key": 39, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:03:17.332787Z"}
+{"key": 40, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:03:17.332787Z"}
+Text split into sentences.
+Input: ["pourrait prendre le niveau de basilic en vigueur lorsque vous effectuez l'analyse des données qui est illégale, vous ne pouvez pas faire cela qui viole l'intention de traiter le modèle correctement et il garantit absolument que votre essai va échouer"]
+Processing time: 30.719
+Real-time factor: 2.014
+{"key": 40, "Time": 647.4691666666666, "Start": 661.279, "event": "Timing", "timestamp": "2025-04-27T20:03:48.105859Z"}
+{"key": 40, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 6214.425000000011, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:03:48.106859Z"}
+{"key": 40, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:03:48.109861Z"}
+{"key": 41, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:03:48.109861Z"}
+Text split into sentences.
+Input: ["Donc et je vais vous donner quelques exemples et j'ai travaillé principalement pendant la grossesse, nous avons fait des études de grossesse enceintes et j'ai découvert que la vitamine D a diminué les complications de la naissance et mais les meilleurs essais ont été faits à l'étranger et"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 34.338
+Real-time factor: 2.078
+{"key": 41, "Time": 673.9145, "Start": 680.48, "event": "Timing", "timestamp": "2025-04-27T20:04:22.502328Z"}
+{"key": 41, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 2954.4750000000195, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:04:22.503328Z"}
+{"key": 41, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:04:22.505330Z"}
+{"key": 42, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:04:22.505330Z"}
+Text split into sentences.
+Input: ['Le meilleur couple a été fait en réellement en Iran et où la population est généralement déficient en vitamine D à tous les niveaux et ils avaient une population de patients assez importante la moitié de ces femmes ont obtenu une dose substantielle de']
+Processing time: 37.259
+Real-time factor: 2.065
+{"key": 42, "Time": 695.0026666666666, "Start": 694.56, "event": "Timing", "timestamp": "2025-04-27T20:04:59.824577Z"}
+{"key": 42, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:04:59.824577Z"}
+{"key": 43, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:04:59.824577Z"}
+Text split into sentences.
+Input: ["La vitamine D et la moitié de ces personnes n'ont rien, c'est ainsi que vous ne pouvez pas mener un essai comme ça aux États-Unis parce que vous violeriez la norme de soins, mais c'est vraiment ainsi que"]
+Processing time: 23.754
+Real-time factor: 1.984
+{"key": 43, "Time": 711.5793333333334, "Start": 709.76, "event": "Timing", "timestamp": "2025-04-27T20:05:23.634444Z"}
+{"key": 43, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:05:23.634444Z"}
+{"key": 44, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:05:23.634444Z"}
+Text split into sentences.
+Input: ["J'ai vu d'énormes effets sur la diminution des complications de naissance comme la naissance préalable à terme et la préeaglampsie et et et le diabète et tout le reste est tombé dans le groupe de traitement si vous faites le même essai aux États-Unis vous vous ne pouvez pas le faire où"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 36.034
+Real-time factor: 2.043
+{"key": 44, "Time": 722.5773333333334, "Start": 727.76, "event": "Timing", "timestamp": "2025-04-27T20:05:59.719880Z"}
+{"key": 44, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 2332.199999999966, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:05:59.719880Z"}
+{"key": 44, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:05:59.719880Z"}
+{"key": 45, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:05:59.719880Z"}
+Text split into sentences.
+Input: ["Notre nutrition est que de meilleures personnes ont de meilleurs niveaux de vitamine D, mais lorsque vous les randomisez comme je l'ai dit que tout le monde en a et ce n'est donc pas comme on vous donnait un médicament qui n'en avait pas et quand vous regardez les résultats, c'est totalement flou et c'est"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 39.566
+Real-time factor: 2.039
+{"key": 45, "Time": 743.4448333333333, "Start": 747.68, "event": "Timing", "timestamp": "2025-04-27T20:06:39.355906Z"}
+{"key": 45, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1905.8249999999703, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:06:39.355906Z"}
+{"key": 45, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:06:39.357907Z"}
+{"key": 46, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:06:39.357907Z"}
+Text split into sentences.
+Input: ["Même vous savez que vous pouvez que vous puissiez surmonter cela dans une certaine mesure lorsque les statisticiens statistiques prendraient leur niveau de basilic à l'entrée de l'étude et que vous l'analyse comme si vous pouvez voir les effets et cela et en fait"]
+Processing time: 29.932
+Real-time factor: 1.962
+{"key": 46, "Time": 765.0809166666667, "Start": 765.36, "event": "Timing", "timestamp": "2025-04-27T20:07:09.402344Z"}
+{"key": 46, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 125.587500000006, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:07:09.402344Z"}
+{"key": 46, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:07:09.402344Z"}
+{"key": 47, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:07:09.402344Z"}
+Text split into sentences.
+Input: ["Pourquoi les études d'observation, vous savez, quand ils ont ces grands groupes de personnes et qu'ils regardent les niveaux et les résultats de la vitamine D via le cancer par grossesse et et les choses et c'est basé sur un style de vie correct et uniformément ceux"]
+Processing time: 35.913
+Real-time factor: 2.154
+{"key": 47, "Time": 779.3485, "Start": 781.16, "event": "Timing", "timestamp": "2025-04-27T20:07:45.371173Z"}
+{"key": 47, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 815.1750000000106, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:07:45.371173Z"}
+{"key": 47, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:07:45.371173Z"}
+{"key": 48, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:07:45.371173Z"}
+Text split into sentences.
+Input: ['Des études et il y en a des milliers montreraient de très gros effets de la vitamine D, mais quand vous êtes allé faire ces essais randomisés et que vous avez eu toutes ces complications et que vous ne pouvez pas vous adapter au niveau de base, tout cela disparaît']
+Processing time: 30.090
+Real-time factor: 2.039
+{"key": 48, "Time": 796.2966666666666, "Start": 799.92, "event": "Timing", "timestamp": "2025-04-27T20:08:15.514194Z"}
+{"key": 48, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1630.5000000000007, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:08:15.514194Z"}
+{"key": 48, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:08:15.516195Z"}
+{"key": 49, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:08:15.516195Z"}
+Text split into sentences.
+Input: ["Et vous n'obtenez pas, vous n'obtenez aucun effet mais si vous si vous soumettez votre article au New England Journal ou à Jamama ou British Medical Journal et que vous et vous analysez les données et souhaitez prendre en compte les niveaux basaux qui violent l'intention de"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 44.193
+Real-time factor: 2.143
+{"key": 49, "Time": 813.1155, "Start": 815.36, "event": "Timing", "timestamp": "2025-04-27T20:08:59.790530Z"}
+{"key": 49, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1010.0250000000074, "event": "Appending voice file Silence to start & end", "timestamp": "2025-04-27T20:08:59.790530Z"}
+{"key": 49, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:08:59.790530Z"}
+{"key": 50, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:08:59.790530Z"}
+Text split into sentences.
+Input: ["Traitez le modèle et il sera rejeté carrément wow wow, donc l'étude vitale est certainement une étude que certains groupes utilisent pour dire aux gens que cela ne fonctionne pas vraiment, oui, nous avons fait l'étude définitive comme si j'ai défié le"]
+Processing time: 40.699
+Real-time factor: 2.131
+{"key": 50, "Time": 834.08, "Start": 831.12, "event": "Timing", "timestamp": "2025-04-27T20:09:40.563517Z"}
+{"key": 50, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:09:40.563517Z"}
+{"key": 51, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:09:40.563517Z"}
+Text split into sentences.
+Input: ["les auteurs de cette étude pour réanalyser leurs données en prenant en compte les niveaux de référence en compte de leurs patients et ils ne le feront pas wow incroyable et ils n'ont même pas appelé leur quantité de vitamine D qu'ils donnaient aux gens une dose élevée à"]
+Processing time: 31.241
+Real-time factor: 2.117
+{"key": 51, "Time": 851.6273333333334, "Start": 850.079, "event": "Timing", "timestamp": "2025-04-27T20:10:11.847848Z"}
+{"key": 51, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T20:10:11.847848Z"}
+{"key": 52, "of": 198, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T20:10:11.847848Z"}
+Text split into sentences.
+Input: ["2 000 ius ouais ce n'est rien de pour le mettre en perspective I J'ai 73 ans, je prends 10 000 unités de vitamine D par jour et je l'ai depuis des années et mon niveau de niveaux de vitamine D se situe entre 80 et 90 nanogrammes par ml um et mon mon"]
