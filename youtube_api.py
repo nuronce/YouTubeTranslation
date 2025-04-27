@@ -1,4 +1,5 @@
 import os
+import glob
 import json
 import torch
 import random
@@ -146,6 +147,7 @@ def process_language(source_json, target_language):
         # Create voice
         for key, value in enumerate(json_data['snips']):
             if os.path.exists(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"):
+                file_parts.append(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
                 continue
             print(f"Generating voice file {key} for {target_language} for video ID: {video_id}: {datetime.now()}")
             # Generate voice files
@@ -176,6 +178,7 @@ def process_language(source_json, target_language):
         
         for f in file_parts:
             os.remove(f)
+
         print(f"Removed voice part files for video ID: {video_id} in {target_language}: {datetime.now()}")
 
     except Exception as e:
