@@ -7,6 +7,23 @@
     "Coqui-TTS": {
         "model": "tts_models/multilingual/multi-dataset/xtts_v2"
     },
-    "rootTranslations" : "Translations"
+    "rootTranslations" : "Translations",
+     "languages": [ "fr",           
+    "en" ,
+"es" ,
+"de" ,
+"it" ,
+"pt" ,
+"pl" ,
+"tr" ,
+"ru" ,
+"nl" ,
+"cs" ,
+"ar" ,
+"zh-cn" ,
+"hu" ,
+"ko" ,
+"ja" ,
+"hi" ]
 }
 }

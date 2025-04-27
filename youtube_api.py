@@ -68,27 +68,14 @@ def process_transcripts(video_ids):
 
             print(f"Found transcript in {original_language} for video ID: {video_id}")
 
-            if original_language == 'fr':           
-                process_language(json_data, 'en')
-            else:
-                process_language(json_data, 'fr')
-            
-            process_language(json_data, 'es')
-            process_language(json_data, 'de')
-            process_language(json_data, 'it')
-            process_language(json_data, 'pt')
-            process_language(json_data, 'pl')
-            process_language(json_data, 'tr')
-            process_language(json_data, 'ru')
-            process_language(json_data, 'nl')
-            process_language(json_data, 'cs')
-            process_language(json_data, 'ar')
-            process_language(json_data, 'zh-cn')
-            process_language(json_data, 'hu')
-            process_language(json_data, 'ko')
-            process_language(json_data, 'ja')
-            process_language(json_data, 'hi')
-            
+            for lang in config['languages']:
+                
+                if original_language == lang:           
+                    continue
+                date = datetime.now()
+                print(f"Processing transcript in {original_language} for video ID: {video_id}: {date}")
+                process_language(json_data, lang)
+                print(f"Processed transcript in {original_language} for video ID: {video_id} in {(datetime.now()-date)}")
 
         except TranscriptsDisabled:
             print(f"Transcripts are disabled for video ID: {video_id}")
