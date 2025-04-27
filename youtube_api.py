@@ -152,7 +152,7 @@ def process_language(source_json, target_language):
             print(f"Generating voice file {key} for {target_language} for video ID: {video_id}: {datetime.now()}")
             # Generate voice files
             tts.tts_to_file(text=value['text'], file_path=f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"
-                            ,language=target_language  # Specify the language
+                            ,language=target_language.lower()  # Specify the language
                             ,speaker_wav="Samples/sample.en.wav", speed=1.1, temperature=0.81
                 
                 )

@@ -21,10 +21,10 @@
 "nl" ,
 "cs" ,
 "ar" ,
-"zh-cn" ,
+"zh-CN" ,
 "hu" ,
 "ko" ,
 "ja" ,
-"hi" ]
+"hi" ] --not working with #s
 }
 }
