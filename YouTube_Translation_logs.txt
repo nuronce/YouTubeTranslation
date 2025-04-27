@@ -1,0 +1,288 @@
+{"event": "Using device: cpu", "timestamp": "2025-04-27T18:40:46.643903Z"}
+open file: c:/Python/YouTubeTranslation/.venv/Lib/site-packages/TTS/.models.json
+tts_models/multilingual/multi-dataset/xtts_v2 is already downloaded.
+open file: C:/Users/ron/AppData/Local/tts/tts_models--multilingual--multi-dataset--xtts_v2/config.json
+Using selector: SelectSelector
+Retrieve file size for https://huggingface.co/coqui/XTTS-v2/resolve/main/config.json
+Fetch range for <File-like object HTTPFileSystem, https://huggingface.co/coqui/XTTS-v2/resolve/main/config.json>: 0-4368
+https://huggingface.co/coqui/XTTS-v2/resolve/main/config.json : bytes=0-4367
+<File-like object HTTPFileSystem, https://huggingface.co/coqui/XTTS-v2/resolve/main/config.json> read: 0 - 4368  , bytes: 0 hits, 1 misses, 4368 total requested bytes
+open file: C:/Users/ron/AppData/Local/tts/tts_models--multilingual--multi-dataset--xtts_v2/config.json
+Using model: xtts
+open file: C:/Users/ron/AppData/Local/tts/tts_models--multilingual--multi-dataset--xtts_v2/model.pth
+{"event": "Using TTS model: tts_models/multilingual/multi-dataset/xtts_v2", "timestamp": "2025-04-27T18:40:56.713591Z"}
+{"channel_id": "UCT_qgyKHNU5V5FVmeeGjdhw", "event": "Processing channel", "timestamp": "2025-04-27T18:40:56.714589Z"}
+file_cache is only supported with oauth2client<4.0.0
+URL being requested: GET https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&id=UCT_qgyKHNU5V5FVmeeGjdhw&key=AIzaSyDmi5-YifGpVPBLp6OWTJqCU3rv15HQ28I&alt=json
+URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUT_qgyKHNU5V5FVmeeGjdhw&maxResults=50&key=AIzaSyDmi5-YifGpVPBLp6OWTJqCU3rv15HQ28I&alt=json
+URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUT_qgyKHNU5V5FVmeeGjdhw&maxResults=50&pageToken=EAAaHlBUOkNESWlFRVkwTURRNVJUZzFSVEpHTkVaRk5qQQ&key=AIzaSyDmi5-YifGpVPBLp6OWTJqCU3rv15HQ28I&alt=json
+URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUT_qgyKHNU5V5FVmeeGjdhw&maxResults=50&pageToken=EAAaHlBUOkNHUWlFRGsxTkVWR1FUWkNPVVEwUmpKR01UWQ&key=AIzaSyDmi5-YifGpVPBLp6OWTJqCU3rv15HQ28I&alt=json
+URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUT_qgyKHNU5V5FVmeeGjdhw&maxResults=50&pageToken=EAAaH1BUOkNKWUJJaEF4TnpFeVFrUTNOVFJCTVRneE1rVTM&key=AIzaSyDmi5-YifGpVPBLp6OWTJqCU3rv15HQ28I&alt=json
+{"channel_id": "UCT_qgyKHNU5V5FVmeeGjdhw", "event": "Found 178 videos in channel", "timestamp": "2025-04-27T18:40:58.100052Z"}
+Starting new HTTPS connection (1): www.youtube.com:443
+https://www.youtube.com:443 "GET /watch?v=hsnLi4RqP1w HTTP/1.1" 200 None
+https://www.youtube.com:443 "GET /api/timedtext?v=hsnLi4RqP1w&ei=OnoOaMK_MIqk0_wPyumlqAc&caps=asr&opi=112496729&xoaf=5&hl=en&ip=0.0.0.0&ipbits=0&expire=1745804458&sparams=ip,ipbits,expire,v,ei,caps,opi,xoaf&signature=8752FB5344306F3267EDC6EBE52C7E402B0B97CF.D9006FA1671ACA44B675584C0372BB3FB3D5013E&key=yt8&kind=asr&lang=en HTTP/1.1" 200 None
+{"original_language": "en", "video_id": "hsnLi4RqP1w", "event": "Found transcript", "timestamp": "2025-04-27T18:40:58.915710Z"}
+{"original_language": "en", "video_id": "hsnLi4RqP1w", "event": "Processing transcript", "timestamp": "2025-04-27T18:40:58.915710Z"}
+{"target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Processing Language", "timestamp": "2025-04-27T18:40:58.916711Z"}
+{"target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Found Translation", "timestamp": "2025-04-27T18:40:58.916711Z"}
+{"key": 0, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:40:58.917761Z"}
+Text split into sentences.
+Input: ["J'ai dû passer les huit prochaines heures à essayer de valider ce que vous avez dit, ce qui est absolument vrai.", "Et cette petite information expliquera beaucoup de je pense que les confusions que les gens observent lorsqu'ils voient des recherches négatives"]
+Processing time: 30.983
+Real-time factor: 2.051
+{"key": 0, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 2109.0, "event": "Prepending voice file Silence", "timestamp": "2025-04-27T18:41:42.765777Z"}
+{"key": 0, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:41:58.179748Z"}
+{"key": 1, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:41:58.179748Z"}
+Text split into sentences.
+Input: ["sur la vitamine D et beaucoup d'autres choses.", 'Donc, cette information était liée à UM, il y a en fait deux systèmes différents dans le corps qui traitent de la vitamine D. euh il y en a un avec un avec des os et du squelette et puis il y a']
+Processing time: 53.553
+Real-time factor: 2.231
+{"key": 1, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 2310.202083333334, "event": "Prepending voice file Silence", "timestamp": "2025-04-27T18:43:03.387613Z"}
+{"key": 1, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:43:24.441797Z"}
+{"key": 2, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:43:27.386283Z"}
+Text split into sentences.
+Input: ['Un autre système pour tout le reste.', 'Pouvez-vous en quelque sorte expliquer ces deux systèmes?', 'Ouais.', "Le premier système euh celui qui a été découvert il y a des décennies que la vitamine D était associée à l'intégrité squelettique"]
+Processing time: 33.040
+Real-time factor: 2.175
+{"key": 2, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:44:13.963110Z"}
+{"key": 3, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:44:15.886555Z"}
+Text split into sentences.
+Input: ["et Ma maintient les niveaux de calcium de sang UM de manière stricte et il est très important et il doit être qu'il doit être maintenu tout le temps et pour que le système implique une vitamine D UH et des reins UM à l'hormone parathyroïdienne et"]
+Processing time: 38.536
+Real-time factor: 2.262
+{"key": 3, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:45:04.587326Z"}
+{"key": 4, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:45:04.587326Z"}
+Text split into sentences.
+Input: ["C'est essentiellement appelé la fonction ENDOC de la vitamine D et c'est ce que tout le monde a toujours identifié la vitamine D, puis au fil du temps, la biologie moléculaire UM est devenue concentrée, ils ont commencé à trouver des cellules UM qui avaient le"]
+Processing time: 48.718
+Real-time factor: 2.166
+{"key": 4, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:45:59.551563Z"}
+{"key": 5, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:45:59.551563Z"}
+Text split into sentences.
+Input: ["Capacité à répondre à la vitamine D qui n'avait rien à voir avec les cellules immunitaires du squelette cellules cancéreuses euh uh cellules placentaires et la liste s'allonge encore et il s'avère que c'est le deuxième système qui s'appelle"]
+Processing time: 37.876
+Real-time factor: 2.142
+{"key": 5, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:46:49.197607Z"}
+{"key": 6, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:46:49.197607Z"}
+Text split into sentences.
+Input: ['Le système paracrine et endocrinien et cela dépend de la quantité de vitamine D peut entrer dans ces cellules et être activé, puis exercer leur fonction.', 'Je veux dire juste dans le corps humain donner ou prendre, il y a 20 000']
+Processing time: 31.396
+Real-time factor: 2.006
+{"key": 6, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:47:25.422797Z"}
+{"key": 7, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:47:25.422797Z"}
+Text split into sentences.
+Input: ['gènes qui sont contrôlés uh uh pour diverses fonctions.', "La vitamine D a la capacité de contrôler 10% ou 2 000 de ces gènes d'une manière ou d'une autre.", 'Et donc pour brosser cela comme beaucoup de mes collègues']
+Processing time: 32.895
+Real-time factor: 1.951
+{"key": 7, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 504.3708333333295, "event": "Prepending voice file Silence", "timestamp": "2025-04-27T18:49:20.134393Z"}
+{"key": 7, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:49:20.137025Z"}
+{"key": 8, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:49:20.137025Z"}
+Text split into sentences.
+Input: ["Euh, disons simplement que c'est un artefact n'a jamais eu de sens pour moi.", 'Donc, si nous jetons un œil à ces deux systèmes, lorsque vous effectuez votre test sanguin en vitamine D, vous regardez une version inactive de vous ne regardez pas le']
+Processing time: 37.348
+Real-time factor: 2.004
+{"key": 8, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "silence_duration": 1066.0583333333384, "event": "Prepending voice file Silence", "timestamp": "2025-04-27T18:54:30.031049Z"}
+{"key": 8, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:54:44.943446Z"}
+{"key": 9, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:54:44.943446Z"}
+Text split into sentences.
+Input: ['Type de vitamine D qui entre dans les cellules.', 'Et comment cela est-il lié à ces deux systèmes différents?', "Eh bien, ici, nous l'obtenons, il devient assez technique.", "Vous avez donc que vous avez lorsque les gens se réfèrent à la vitamine D principalement lorsqu'ils font référence à"]
+Processing time: 43.558
+Real-time factor: 1.956
+{"key": 9, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:59:02.947363Z"}
+{"key": 10, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:59:02.947363Z"}
+Text split into sentences.
+Input: ["Vitamine D C'est le formulaire que vous obtenez lorsque vous prenez un supplément ou lorsque vous le faites dans votre peau lorsque le soleil frappe votre peau um, c'est que nous appelons que la vitamine D ou le composé parent, puis ce composé va dans la circulation"]
+Processing time: 36.619
+Real-time factor: 2.163
+{"key": 10, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T18:59:39.613165Z"}
+{"key": 11, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T18:59:39.613834Z"}
+Text split into sentences.
+Input: ["N'y reste pas très longtemps et mais il est transformé en un autre composé appelé 25 Hydroxy Vitamin D et c'est votre sang la forme intermédiaire, la forme intermédiaire qui reste dans votre sang pendant des semaines.", "D'accord.", "D'accord.", "Et c'est"]
+Processing time: 48.466
+Real-time factor: 2.083
+{"key": 11, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:00:28.155941Z"}
+{"key": 12, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:00:28.155941Z"}
+Text split into sentences.
+Input: ["Une bonne et une mauvaise chose parce qu'elle reste longtemps, mais elle n'est pas très accessible à ces tissus qui en ont besoin.", 'Il est accessible au rein qui maintient le calcium sanguin.', 'Et puis finalement, euh uh le']
+Processing time: 34.800
+Real-time factor: 1.954
+{"key": 12, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:01:03.006432Z"}
+{"key": 13, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:01:03.006432Z"}
+Text split into sentences.
+Input: ["Le composé est transformé en un autre composé qui est vraiment l'une des hormones les plus puissantes connues.", "Et c'est euh la 125 Dihydroxy Vitamine D. et c'est ce que c'est ce qui anime toutes ces fonctions de gènes dans tous ces tissus.", 'Tellement tellement']
+Processing time: 37.579
+Real-time factor: 2.056
+{"key": 13, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:01:40.644032Z"}
+{"key": 14, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:01:40.644032Z"}
+Text split into sentences.
+Input: ['Celui lorsque vous allez chez le médecin et faites votre test sanguin, vous ne regardez pas la forme active.', "C'est une forme inactive qui peut rester dans le sang pendant quelques semaines.", "C'est le oui.", "C'est le je l'appellerai le"]
+Processing time: 48.921
+Real-time factor: 2.112
+{"key": 14, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:02:29.652098Z"}
+{"key": 15, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:02:29.652098Z"}
+Text split into sentences.
+Input: ['réservoir.', "D'accord.", "C'est le réservoir de vitamine D qui est mesuré.", "J'ai compris.", 'Et puis il se transforme en forme active ou un certain montant se transformera en forme active.', 'Mais alors comment cela se rapporte-t-il à ces deux systèmes différents?']
+Processing time: 52.518
+Real-time factor: 2.115
+{"key": 15, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:03:22.257846Z"}
+{"key": 16, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:03:22.257846Z"}
+Text split into sentences.
+Input: ['Eh bien, donc dans cette forme intermédiaire, la forme du réservoir peut se transformer en forme active dans le rein.', "C'est très réglementé et c'est ce qui a fait ce qui régule le calcium sanguin.", "D'accord, cette forme intermédiaire peut aussi aller"]
+Processing time: 37.238
+Real-time factor: 2.149
+{"key": 16, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:03:59.559743Z"}
+{"key": 17, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:03:59.560742Z"}
+Text split into sentences.
+Input: ["dans n'importe quelle cellule du corps.", "D'accord, et soyez transformé en forme active et en fonction de cette cellule donnée, qu'il s'agisse d'une cellule cancéreuse pour empêcher le cancer de progresser ou de cellules immunitaires pour les faire fonctionner dans le approprié"]
+Processing time: 38.952
+Real-time factor: 2.237
+{"key": 17, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:04:38.572278Z"}
+{"key": 18, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:04:38.572278Z"}
+Text split into sentences.
+Input: ['mode.', "Et euh aussi le problème avec cette forme intermédiaire est qu'il n'est pas très accessible à ces cellules.", "C'est peut-être qu'il est lié à cette protéine qui le maintient.", "C'est pourquoi ça dure si longtemps dans le sang."]
+Processing time: 37.189
+Real-time factor: 2.142
+{"key": 18, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:05:15.817575Z"}
+{"key": 19, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:05:15.818575Z"}
+Text split into sentences.
+Input: ["Ainsi, le composé parent, celui que vous prenez dans un supplément, s'avère que c'est vraiment important car cette forme peut entrer dans l'une de ces cellules et être activée tout au long de la chaîne jusqu'à la forme active.", 'Le problème est que la forme disparaît']
+Processing time: 43.218
+Real-time factor: 2.182
+{"key": 19, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:05:59.097818Z"}
+{"key": 20, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:05:59.098818Z"}
+Text split into sentences.
+Input: ['en une journée.', 'Ouais.', 'Il doit donc être reconstitué tous les jours pour avoir la pleine fonction de la vitamine présente.', "C'est très compliqué.", "C'est pourquoi beaucoup de médecins ne prêtent pas attention à cela ou aux scientifiques."]
+Processing time: 37.246
+Real-time factor: 2.133
+{"key": 20, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:06:36.404089Z"}
+{"key": 21, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:06:36.404089Z"}
+Text split into sentences.
+Input: ["Donc, c'est ceci en quelque sorte ce que je veux entrer dans ce point que vous venez de mentionner parce que vous avez les différents types et que lorsque les gens font tester le sang, ils supposent qu'il y a un système.", "Oh, j'ai"]
+Processing time: 37.688
+Real-time factor: 2.207
+{"key": 21, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:07:14.167513Z"}
+{"key": 22, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:07:14.167513Z"}
+Text split into sentences.
+Input: ['Assez dans le sang, donc tout va être satisfait.', "Mais ce n'est pas nécessairement vrai.", "Non, c'est vrai.", "Et à cause de la forme mesurable, c'est important.", "D'accord, c'est le réservoir plus important pour le maintien du calcium du sang et"]
+Processing time: 37.945
+Real-time factor: 2.126
+{"key": 22, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:07:52.188012Z"}
+{"key": 23, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:07:52.188012Z"}
+Text split into sentences.
+Input: ['squelette.', 'Mais pour les autres fonctions, la seule façon dont vous pouvez vous, vous pouvez être sûr que vous avez des montants adéquats est de le prendre tous les jours ou de vous mettre au soleil tous les jours.', "Et bien sûr, ce n'est vraiment pas faisable"]
+Processing time: 50.054
+Real-time factor: 2.154
+{"key": 23, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:08:42.314797Z"}
+{"key": 24, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:08:42.314797Z"}
+Text split into sentences.
+Input: ['pour de nombreuses raisons.', "Ainsi, la consommation orale de vitamine D sur un quotidien ou au minimum sur une base hebdomadaire est importante parce que c'est le qui est la forme de base de la base et cette forme va et vient très rapidement."]
+Processing time: 33.641
+Real-time factor: 2.243
+{"key": 24, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:09:16.034959Z"}
+{"key": 25, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:09:16.034959Z"}
+Text split into sentences.
+Input: ['Ouah.', 'Cela a donc à voir avec la demi-vie et um qui se décompose.', 'Une partie descend rapidement certains séjournent là-dedans.', "Alors maintenant, dans une de vos vidéos, vous vouliez dire que vous avez traversé un tas d'études et vous avez montré que les gens passent"]
+Processing time: 41.063
+Real-time factor: 2.111
+{"key": 25, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:09:57.178223Z"}
+{"key": 26, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:09:57.178223Z"}
+Text split into sentences.
+Input: ["Étape comme un nombre d'études qui ont échoué qui n'ont montré aucune réponse avec la vitamine D et vous avez corrélé cela avec euh bien parce qu'ils ne laissent que les gens ne le prennent qu'une fois par semaine ou une fois par mois contre ouais.", 'enquête et même été']
+Processing time: 31.309
+Real-time factor: 2.176
+{"key": 26, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:10:28.542441Z"}
+{"key": 27, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:10:28.543442Z"}
+Text split into sentences.
+Input: ['Une étude sur le squelette où ils l\'ont pris une fois par an, comme un million d\'unités une fois par an, puis ils ont dit: "Eh bien, cela n\'a pas très bien fonctionné."', "Et cela continue d'être cité dans certains faits comme nuisibles, c'est idiot.", 'Oh mon Dieu.']
+Processing time: 52.907
+Real-time factor: 2.141
+{"key": 27, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:11:21.529180Z"}
+{"key": 28, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:11:21.529180Z"}
+Text split into sentences.
+Input: ["Si quelqu'un prend un million d'uus de vitamine D juste une fois, euh, je pense que après une journée, il descend à la moitié et ensuite la journée plus tard, elle descend à un quart, non?", "Il se décompose et s'en va ensuite ou ou c'est juste"]
+Processing time: 37.288
+Real-time factor: 2.128
+{"key": 28, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:11:58.882130Z"}
+{"key": 29, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:11:58.882130Z"}
+Text split into sentences.
+Input: ["devient ouais, cela stimulera la forme intermédiaire pendant un certain temps, mais c'est un très horriblement inefficace de le faire et cela devient plus si vous le faites une fois par jour, c'est efficace.", "Une fois par semaine, c'est moins efficace.", 'Une fois par mois encore moins']
+Processing time: 40.912
+Real-time factor: 2.162
+{"key": 29, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:12:39.866723Z"}
+{"key": 30, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:12:39.866723Z"}
+Text split into sentences.
+Input: ['efficace.', 'Alors oui.', 'Alors wow.', "En ce qui concerne les recherches sur cette UM, qu'en est-il de vous, vous savez que vous avez tous ces chercheurs.", 'Ils regardent en quelque sorte u vitamine D juste lié aux os et au calcium.']
+Processing time: 47.976
+Real-time factor: 2.118
+{"key": 30, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:13:27.914650Z"}
+{"key": 31, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:13:27.914650Z"}
+Text split into sentences.
+Input: ["Ils sont en quelque sorte presque prétend comme cet autre système n'existe pas.", 'Est-ce vrai?', 'Ouais, en gros.', 'Oui.', "Je veux dire, vous devez d'abord accepter le fait que la vitamine D a des fonctions au-delà du calcium et je veux dire"]
+Processing time: 45.022
+Real-time factor: 2.160
+{"key": 31, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:14:12.995442Z"}
+{"key": 32, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:14:12.995442Z"}
+Text split into sentences.
+Input: ['Les données sont terminées.', "Mais ce qui finit par se produire, c'est que les choses se déroulent comme un essai vital.", 'Ouais.', "Là où ils donnent trop peu de vitamine D. Ils le donnent à des gens qui dans un essai randomisé qui qui n'en ont pas besoin.", 'Tu sais,']
+Processing time: 47.648
+Real-time factor: 2.127
+{"key": 32, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:15:00.726931Z"}
+{"key": 33, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:15:00.726931Z"}
+Text split into sentences.
+Input: ["C'est comme euh dans la newsletter The Thompson, je vous ai mentionné euh quand j'en discutais avec l'auteur de ce document afin que la norme en or pour tous les essais de drogue ou les essais de contrôle randomisés, d'accord, disons que vous avez un"]
+Processing time: 58.274
+Real-time factor: 2.307
+{"key": 33, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:15:59.095953Z"}
+{"key": 34, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:15:59.095953Z"}
+Text split into sentences.
+Input: ['Drug de cholestérol et que vous souhaitez tester si cela déprime vraiment le cholestérol sérique si vous le prenez.', 'Ainsi, la compagnie pharmaceutique assemble UH assemble une population de personnes et administre la moitié de ces personnes, la drogue et la moitié de ces personnes obtiennent']
+Processing time: 42.781
+Real-time factor: 2.138
+{"key": 34, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:16:41.947648Z"}
+{"key": 35, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:16:41.947648Z"}
+Text split into sentences.
+Input: ['Placebo, puis ils analysent les données et les regardent.', "Bien sûr, ils sont dans la plupart des cas, c'est le succès et c'est ainsi que les essais de drogue sont gérés.", "Mais le médicament que vous donnez à ces gens le corps n'a jamais"]
+Processing time: 30.316
+Real-time factor: 2.085
+{"key": 35, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:17:12.318814Z"}
+{"key": 36, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:17:12.318814Z"}
+Text split into sentences.
+Input: ["Je l'ai vu.", "Ils n'en ont pas de base.", 'Contrairement aux nutriments, pas seulement à la vitamine D, mais à tout essai de nutriments.', "D'accord?", 'Il est impossible dans ce pays de faire un véritable essai randomisé parce que la population avec laquelle vous avez affaire a certaines personnes']
+Processing time: 41.957
+Real-time factor: 2.144
+{"key": 36, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:17:54.341196Z"}
+{"key": 37, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:17:54.341196Z"}
+Text split into sentences.
+Input: ['ont très peu, certaines personnes en ont beaucoup.', "Mais quand vous si vous les prenez simplement au hasard et et les randomisez-les et donnez à ces gens la moitié d'entre eux un niveau de vitamine D, souvent pas assez, et cette autre moitié seulement"]
+Processing time: 36.862
+Real-time factor: 2.147
+{"key": 37, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:18:31.273660Z"}
+{"key": 38, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:18:31.273660Z"}
+Text split into sentences.
+Input: ["Obtenez un placebo ou un placebo dans ce pays signifie qu'ils doivent obtenir la dose quotidienne standard.", 'Donc, ils ne deviennent même pas zéro.', "Et ce qui se passe, c'est que c'est une étude horriblement compromise.", "C'est donc ce qui est vital et tout ce que se passe est"]
+Processing time: 52.006
+Real-time factor: 2.080
+{"key": 38, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:19:23.375322Z"}
+{"key": 39, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:19:23.375322Z"}
+Text split into sentences.
+Input: ["Cela et et l'autre chose est lorsque vous vous terminez et que vous faites votre analyse de données, ne pensez-vous pas que vous pourriez prendre le niveau de basilic lorsque vous effectuez l'analyse des données.", "Eh bien, c'est illégal.", 'Tu ne peux pas faire']
+Processing time: 47.939
+Real-time factor: 2.147
+{"key": 39, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:20:11.378750Z"}
+{"key": 40, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:20:11.378750Z"}
+Text split into sentences.
+Input: ['que.', "Cela viole l'intention de traiter le modèle.", "D'accord?", 'Et cela garantit absolument que votre essai va échouer.', "Alors, et je vais vous donner quelques exemples et j'ai travaillé principalement pendant la grossesse.", 'Nous avons fait des études de grossesse enceintes et trouvé']
+Processing time: 46.122
+Real-time factor: 2.112
+{"key": 40, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:20:57.565467Z"}
+{"key": 41, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:20:57.565467Z"}
+Text split into sentences.
+Input: ["que la vitamine D a diminué les complications de la naissance et mais les meilleurs essais ont été réellement effectués à l'étranger et le meilleur couple a été réellement fait en Iran et où la population est généralement déficiente en vitamine D à tous les niveaux et ils avaient"]
+The text length exceeds the character limit of 273 for language 'fr', this might cause truncated audio.
+Processing time: 51.305
+Real-time factor: 2.367
+{"key": 41, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generated voice file", "timestamp": "2025-04-27T19:21:48.946006Z"}
+{"key": 42, "of": 196, "target_language": "fr", "video_id": "hsnLi4RqP1w", "event": "Generating voice file", "timestamp": "2025-04-27T19:21:48.946006Z"}
+Text split into sentences.
+Input: ['une population de patients assez importante.', "La moitié de ces femmes ont obtenu une dose substantielle de vitamine D et la moitié de ces personnes n'ont rien obtenu, c'est ainsi que vous ne pouvez pas mener un procès comme ça aux États-Unis parce que vous violeriez la norme de soins.", 'Mais sur']
