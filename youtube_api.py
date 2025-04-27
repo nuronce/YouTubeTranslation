@@ -121,13 +121,14 @@ def process_language(source_json, target_language):
         else:
             os.makedirs(f"{root_dir}{target_language}/", exist_ok=True)  # Create directory if it doesn't exist
             # Translate to target_language
-            for snip in source_json['snips']:
+            for key, snip in enumerate(source_json['snips']):
                 retries = 0
                 max_retries = 3
                 translated = ""
                 while retries < max_retries:
                     try:
                         translated = GoogleTranslator(source=source_json['language'], target=target_language).translate(snip['text'])     
+                        print_log(f"Translated {key}:{len(source_json['snips'])}")
                         time.sleep(random.uniform(0, 2) ) 
                     except Exception as e:
                         print_log(f"Error translating text: {e}", True)
