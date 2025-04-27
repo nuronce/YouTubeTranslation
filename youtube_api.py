@@ -164,7 +164,7 @@ def process_language(source_json, target_language):
                 tts_audio = tts_audio.append(shh, crossfade=min(len(shh), len(tts_audio)))
                 #tts_audio.export(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav", format="wav")  
             
-            print(f"Generated voice file {key} for {target_language} for video ID: {video_id}: {datetime.now()}")
+            print(f"Generated voice file {key}:{len(json_data['snips'])} for {target_language} for video ID: {video_id}: {datetime.now()}")
             audio_parts.append(tts_audio)                  
         print(f"Generated all voice files for {target_language} for video ID: {video_id}: {datetime.now()}")
 
