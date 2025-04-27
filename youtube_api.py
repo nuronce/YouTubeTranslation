@@ -1,13 +1,14 @@
+import os
 import json
 import torch
 import random
 import time
+import re
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import TranscriptsDisabled
 from deep_translator import GoogleTranslator
 from tenacity import retry, stop_after_attempt, wait_fixed
 from TTS.api import TTS
-import os
 from pydub import AudioSegment
 from datetime import datetime
 
@@ -42,6 +43,9 @@ def get_video_ids_from_channel(api_key, channel_id):
 def process_transcripts(video_ids):
     
     for video_id in video_ids:
+        if config['YOUTUBE']['videoid_filter_Starts_With']!="" and re.match(config['YOUTUBE']['videoid_filter_Starts_With'], video_id) is None:
+            print(f"Invalid video ID: {video_id}")
+            continue
         root_dir = f"{config['rootTranslations']}/{video_id}/"
         try:
             # Fetch transcript in French
@@ -203,5 +207,6 @@ for channel_id in config['YOUTUBE']['CHANNELIDs']:
     print(f"Processing channel ID: {channel_id}")
     video_ids = get_video_ids_from_channel(config['YOUTUBE']['APIKEY'], channel_id)
     print(f"Found {len(video_ids)} videos in channel ID: {channel_id}")
+
     process_transcripts(video_ids)
 

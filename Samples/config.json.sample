@@ -2,7 +2,8 @@
     "YOUTUBE": {
             "APIKEY":"xxxx",
             "CHANNELIDs": [
-                "UCT_xxxx"]
+                "UCT_xxxx"],
+                "videoid_filter_Starts_With":"[a-kA-K]"
     },
     "Coqui-TTS": {
         "model": "tts_models/multilingual/multi-dataset/xtts_v2"
