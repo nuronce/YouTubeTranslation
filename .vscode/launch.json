@@ -17,16 +17,6 @@
             },
 
         
-        },
-        {
-            "name": "Python Run: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/youtube_api.py",
-            "console": "integratedTerminal",
-            "env": {
-                "PYTHONUTF8": "1"
-            },
         }
     ]
 }
