@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import torch
 import random
@@ -244,7 +245,10 @@ def process_language(source_json, target_language):
 def translate_with_tenacity(source_language, target_language, text):
     s = GoogleTranslator(source=source_language, target=target_language).translate(text)                   
     return s 
-
+ 
+if (sys.flags.utf8_mode != 1):
+    log.error("Setting default encoding to utf-8")
+    exit()
 
 def load_config(config_path="config.json"):
     if os.path.exists(config_path):
@@ -253,8 +257,9 @@ def load_config(config_path="config.json"):
     else:
         return {}
 config = load_config()
-AudioSegment.converter = config['ffmpeg_path']
 
+if (config['ffmpeg_Path'] != ""):
+    AudioSegment.converter = config['ffmpeg_Path']
 
 # Get device
 device = "cuda" if torch.cuda.is_available() else "cpu"
