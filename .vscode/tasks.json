@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Python Script in venv",
+            "type": "shell",
+            "command": ".venv\\Scripts\\python",
+            "args": ["-X","utf8","youtube_api.py"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "env":{
+                "PYTHONUTF8": "1"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
