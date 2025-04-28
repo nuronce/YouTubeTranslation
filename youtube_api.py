@@ -86,7 +86,7 @@ def process_transcripts(video_ids):
             transcript = transcript_obj.fetch(original_language)          
 
             if os.path.exists(f"{root_dir}{video_id}.{original_language}.json"):
-                with open(f"{root_dir}{video_id}.{original_language}.json", "r") as json_file:
+                with open(f"{root_dir}{video_id}.{original_language}.json", "r", encoding="utf-8") as json_file:
                     json_data = json.load(json_file)
             else:
                 original_text = []
@@ -106,7 +106,7 @@ def process_transcripts(video_ids):
                 os.makedirs(f"{root_dir}", exist_ok=True)  # Create directory if it doesn't exist
                 json_data = {'video_id':video_id,'language':original_language,'snips':original_text}
 
-                with open(f"{root_dir}{video_id}.{original_language}.json", "w") as json_file:
+                with open(f"{root_dir}{video_id}.{original_language}.json", "w", encoding="utf-8") as json_file:
                     json.dump(json_data, json_file, indent=4)
 
             log.info("Found transcript", original_language=original_language, video_id=video_id)
@@ -142,7 +142,7 @@ def process_language(source_json, target_language):
             log.warning("Audio already exists", target_language = target_language, video_id=video_id)
             return
         if os.path.exists(f"{root_dir}{target_language}/{video_id}.{target_language}.json"):
-            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r") as json_file:
+            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r", encoding="utf-8") as json_file:
                 json_data = json.load(json_file)
             log.warning(f"Found Translation", target_language = target_language, video_id=video_id)
         else:
@@ -176,7 +176,7 @@ def process_language(source_json, target_language):
 
             json_data = {'video_id':video_id,'original_language':source_json['language'],'language':target_language,'snips':translated_text}
 
-            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "w") as json_file:
+            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "w", encoding="utf-8") as json_file:
                 json.dump(json_data, json_file, indent=4)
     
         audio_parts = []
@@ -248,7 +248,7 @@ def translate_with_tenacity(source_language, target_language, text):
 
 def load_config(config_path="config.json"):
     if os.path.exists(config_path):
-        with open(config_path, 'r') as f:
+        with open(config_path, 'r', encoding="utf-8") as f:
             return json.load(f)
     else:
         return {}
