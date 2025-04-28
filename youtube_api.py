@@ -253,7 +253,7 @@ def load_config(config_path="config.json"):
     else:
         return {}
 config = load_config()
-
+AudioSegment.converter = config['ffmpeg_path']
 
 
 # Get device

@@ -24,9 +24,21 @@ To run this project, ensure you have the following installed:
    ```bash
    git clone https://github.com/nuronce/YouTubeTranslation.git
    cd YouTubeTranslation
-2. get the requirements
-   for CPU version
-```bash
-pip install -r requirements_CPU.txt
-   for GPU version
-currently for GPU version install the CPU version and then instally pytorch based on your needs.
+2. if you have a GPU go to https://pytorch.org/get-started/locally/ and pic the command that matches your setup.
+   get the requirements
+   ex: Cuda 12.8 & Windows
+   ```bash
+   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+   ```
+   ex: CPU & WIndows or MAC
+   ```bash
+   pip3 install torch torchvision torchaudio
+   ```
+   ex: Cuda 12.8 & Linux
+   ```bash
+   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+   ```
+3. To get all requirements installed
+   ```bash
+   pip install -r requirements_CPU.txt
+   ```

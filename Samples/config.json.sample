@@ -9,6 +9,7 @@
         "model": "tts_models/multilingual/multi-dataset/xtts_v2"
     },
     "rootTranslations" : "Translations",
+    "ffmpeg_Path":"path/to/ffmpeg.exe"
      "languages": [ "fr",           
     "en" ,
 "es" ,
