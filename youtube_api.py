@@ -98,7 +98,7 @@ def process_transcripts(video_ids):
                     if duration == 0:
                         start = snip.start
                     duration += snip.duration
-                    if (key == len(transcript.snippets)-1) or (snip.duration > 15) or (len( transcript.snippets[key+1].text + txt) > 210 ):
+                    if (key == len(transcript.snippets)-1) or (snip.duration > 15) or (len( transcript.snippets[key+1].text + txt) > 512 ):
                         original_text.append({"text":txt,'duration':duration, 'start':start})
                         txt = ""
                         duration = 0
@@ -191,17 +191,46 @@ def process_language(source_json, target_language):
                 tts_audio =AudioSegment.from_wav(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
                 start += tts_audio.duration_seconds
                 continue
-            log.info(f"Generating voice file",  key=key, of=len(json_data['snips'])-1, target_language=target_language,video_id=video_id)
-                     
-            # Generate voice files
-            tts.tts_to_file(text=value['text'], file_path=f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"
-                            ,language=target_language.lower()  # Specify the language
-                            ,speaker_wav=f"Samples/sample.{source_json['language']}.wav", speed=1.05, temperature=0.81
-                
-                )
             
-            file_parts.append(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
 
+            #split the processing for limitations of the TTS
+            process_text = ""
+            words = value['text'].split(" ")
+            sub_audio_parts = []
+            sub_files = []
+            parts_counter = 1
+            for sub_key, sub_value in enumerate(words):
+                process_text += sub_value + " "
+                if ((sub_key == len(words)-1)) or (len(process_text)+ len(words[sub_key+1]) > int(config['languages'][target_language])):
+                    # Generate voice files
+
+                    log.info(f"Generating voice file",  key=f"{key}.{parts_counter}", of=len(json_data['snips'])-1, target_language=target_language,video_id=video_id)
+
+                    filename = f"{root_dir}{target_language}/{video_id}.{key}-{parts_counter}.{target_language}.wav"
+                    sub_files.append(filename)
+                    tts.tts_to_file(text=process_text, file_path=filename
+                                    ,language=target_language.lower()  # Specify the language
+                                    ,speaker_wav=f"Samples/sample.{source_json['language']}.wav", speed=1.05, temperature=0.81
+                        
+                        )
+                    tts_audio =AudioSegment.from_wav(filename)
+                    sub_audio_parts.append(tts_audio)
+                    parts_counter += 1  
+                    process_text = ""
+                    continue
+
+            #combine the sub-parts into one file    
+            combined = sum(sub_audio_parts)
+            combined.export(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav", format="wav")
+            for f in sub_files:
+                os.remove(f)
+
+            
+
+
+            file_parts.append(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
+            log.info(f"Generated voice file",  key=key, of=len(json_data['snips'])-1, target_language=target_language,video_id=video_id)
+            
             tts_audio =AudioSegment.from_wav(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
             
             log.info("Timing", key=key, Time=start, Start=value['start'])

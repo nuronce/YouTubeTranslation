@@ -42,3 +42,8 @@ To run this project, ensure you have the following installed:
    ```bash
    pip install -r requirements_CPU.txt
    ```
+
+### Limitations
+1. Limits to what can be sent to convert at one time
+   https://github.com/coqui-ai/TTS/discussions/3548
+   If this changes need to change the config file

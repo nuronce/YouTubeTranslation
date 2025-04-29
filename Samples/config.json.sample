@@ -10,21 +10,27 @@
     },
     "rootTranslations" : "Translations",
     "ffmpeg_Path":"path/to/ffmpeg.exe",
-     "languages": [ "fr",           
-    "en" ,
-"es" ,
-"de" ,
-"it" ,
-"pt" ,
-"pl" ,
-"tr" ,
-"ru" ,
-"nl" ,
-"cs" ,
-"ar" ,
-"zh-CN" ,
-"hu" ,
-"ko" ,
-"ja" ,
-"hi" ] --not working with #s
+ "languages": {
+        "en":"250",
+        "de":"253",
+               "fr":"273",
+               "es":"239",
+               "it":"213",
+               "pt":"203",
+               "pl":"224",
+               "zh":"82",
+               "ar":"166",
+               "ru":"182",
+               "nl":"251",
+               "tr":"226",
+               "ja":"71",
+               "hu":"224",
+               "ko":"95"
+                         
+        "cs":"186"-- decimals causing issues
+        "hi":"150" -- numbers not working 
+        
+}
+
+
 }
