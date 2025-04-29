@@ -15,6 +15,21 @@ from TTS.api import TTS
 from pydub import AudioSegment
 from datetime import datetime
 
+import ctypes
+import time
+import platform
+
+# Constants for execution state
+if platform.system() == "Windows":
+    # Windows-specific logic
+    ES_CONTINUOUS = 0x80000000
+    ES_SYSTEM_REQUIRED = 0x00000001
+    ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
+    print("Sleep mode prevented on Windows.")
+elif platform.system() == "Linux":
+    # Linux-specific logic: Execute a command to prevent sleep
+    os.system("caffeinate")  # Example: Use `caffeinate` on macOS/Linux
+
 # Set up the logging module
 log_filename = datetime.now().strftime("YouTube_Translation_log_%Y-%m-%d %H-%M.log")
 
@@ -274,7 +289,7 @@ def process_language(source_json, target_language):
 def translate_with_tenacity(source_language, target_language, text):
     s = GoogleTranslator(source=source_language, target=target_language).translate(text)                   
     return s 
- 
+
 if (sys.flags.utf8_mode != 1):
     log.error("Setting default encoding to utf-8")
     exit()
@@ -304,3 +319,5 @@ for channel_id in config['YOUTUBE']['CHANNELIDs']:
     log.info(f"Found {len(video_ids)} videos in channel",channel_id=channel_id)
 
     process_transcripts(video_ids)
+
+
