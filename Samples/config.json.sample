@@ -10,7 +10,6 @@
     },
     "rootTranslations" : "Translations",
     "ffmpeg_Path":"path/to/ffmpeg.exe",
-<<<<<<< HEAD
  "languages": {
         "en":"250",
         "de":"253",
@@ -33,24 +32,4 @@
         
 }
 
-
-=======
-     "languages": [ "fr",           
-    "en" ,
-"es" ,
-"de" ,
-"it" ,
-"pt" ,
-"pl" ,
-"tr" ,
-"ru" ,
-"nl" ,
-"cs" ,
-"ar" ,
-"zh-CN" ,
-"hu" ,
-"ko" ,
-"ja" ,
-"hi" ] --not working with #s
->>>>>>> 75f5495d437b49a66ccbf03b95ffc3a1a429fa31
 }
