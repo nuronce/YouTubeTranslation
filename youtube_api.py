@@ -1,10 +1,13 @@
 import os
 import sys
+import sys
 import json
 import torch
 import random
 import time
 import re
+import structlog
+import logging
 import structlog
 import logging
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -91,9 +94,11 @@ def process_transcripts(video_ids):
     for video_id in video_ids:
         if config['YOUTUBE']['videoid_filter_Starts_With']!="" and re.match(config['YOUTUBE']['videoid_filter_Starts_With'], video_id) is None:
             log.warning("Invalid video ID", video_id = video_id)
+            log.warning("Invalid video ID", video_id = video_id)
             continue
         root_dir = f"{config['rootTranslations']}/{video_id}/"
         try:
+            # Fetch transcript in French or English
             # Fetch transcript in French or English
             transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
             
@@ -103,13 +108,17 @@ def process_transcripts(video_ids):
 
             if os.path.exists(f"{root_dir}{video_id}.{original_language}.json"):
                 with open(f"{root_dir}{video_id}.{original_language}.json", "r", encoding="utf-8") as json_file:
+                with open(f"{root_dir}{video_id}.{original_language}.json", "r", encoding="utf-8") as json_file:
                     json_data = json.load(json_file)
             else:
                 original_text = []
                 txt = ""
                 duration = 0
                 for key, snip in enumerate(transcript.snippets):
+                for key, snip in enumerate(transcript.snippets):
                     txt += snip.text + " "
+                    if duration == 0:
+                        start = snip.start
                     if duration == 0:
                         start = snip.start
                     duration += snip.duration
@@ -118,13 +127,16 @@ def process_transcripts(video_ids):
                         txt = ""
                         duration = 0
                     
+                    
 
                 os.makedirs(f"{root_dir}", exist_ok=True)  # Create directory if it doesn't exist
                 json_data = {'video_id':video_id,'language':original_language,'snips':original_text}
 
                 with open(f"{root_dir}{video_id}.{original_language}.json", "w", encoding="utf-8") as json_file:
+                with open(f"{root_dir}{video_id}.{original_language}.json", "w", encoding="utf-8") as json_file:
                     json.dump(json_data, json_file, indent=4)
 
+            log.info("Found transcript", original_language=original_language, video_id=video_id)
             log.info("Found transcript", original_language=original_language, video_id=video_id)
 
             for lang in config['languages']:
@@ -133,14 +145,20 @@ def process_transcripts(video_ids):
                     continue
                 date = datetime.now()
                 log.info("Processing transcript", original_language=original_language, video_id=video_id)
+                log.info("Processing transcript", original_language=original_language, video_id=video_id)
                 process_language(json_data, lang)
                 date2 = datetime.now()
+                log.info("Processed transcript", original_language=original_language, video_id=video_id, duration=(date2 - date).total_seconds())
                 log.info("Processed transcript", original_language=original_language, video_id=video_id, duration=(date2 - date).total_seconds())
 
         except TranscriptsDisabled as e:
             log.error("Transcripts are disabled", video_id=video_id, error=str(e))
         #except YouTubeTranscriptApi.NoTranscriptFound as e:             log.error("Transcripts are missing", video_id=video_id, error=str(e))
+        except TranscriptsDisabled as e:
+            log.error("Transcripts are disabled", video_id=video_id, error=str(e))
+        #except YouTubeTranscriptApi.NoTranscriptFound as e:             log.error("Transcripts are missing", video_id=video_id, error=str(e))
         except Exception as e:
+            log.error("Error processing video ID", video_id=video_id, error=str(e))
             log.error("Error processing video ID", video_id=video_id, error=str(e))
 
 def process_language(source_json, target_language):
@@ -151,15 +169,19 @@ def process_language(source_json, target_language):
     root_dir = f"{config['rootTranslations']}/{video_id}/"
 
     log.info("Processing Language", target_language=target_language, video_id=video_id)
+    log.info("Processing Language", target_language=target_language, video_id=video_id)
             
     try:
         json_data = ""
         if os.path.exists(f"{root_dir}{target_language}/{video_id}.{target_language}.wav"):
             log.warning("Audio already exists", target_language = target_language, video_id=video_id)
+            log.warning("Audio already exists", target_language = target_language, video_id=video_id)
             return
         if os.path.exists(f"{root_dir}{target_language}/{video_id}.{target_language}.json"):
             with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r", encoding="utf-8") as json_file:
+            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "r", encoding="utf-8") as json_file:
                 json_data = json.load(json_file)
+            log.warning(f"Found Translation", target_language = target_language, video_id=video_id)
             log.warning(f"Found Translation", target_language = target_language, video_id=video_id)
         else:
             os.makedirs(f"{root_dir}{target_language}/", exist_ok=True)  # Create directory if it doesn't exist
@@ -173,7 +195,10 @@ def process_language(source_json, target_language):
                         translated = GoogleTranslator(source=source_json['language'], target=target_language).translate(snip['text'])     
                         log.info("Translated", key=key, of=len(source_json['snips'])-1, target_language=target_language, video_id=video_id)
                         time.sleep(random.uniform(0, 1) ) 
+                        log.info("Translated", key=key, of=len(source_json['snips'])-1, target_language=target_language, video_id=video_id)
+                        time.sleep(random.uniform(0, 1) ) 
                     except Exception as e:
+                        log.error("Error translating text", video_id=video_id, error=str(e))
                         log.error("Error translating text", video_id=video_id, error=str(e))
                         retries += 1
                         time.sleep(random.uniform(5, 15) ) 
@@ -181,28 +206,36 @@ def process_language(source_json, target_language):
                         break  # Exit the loop if translation is successful
                 if translated == "":
                     log.error(f"Translation failed, Skipping Language", text=trans_text, target_language=target_language, video_id=video_id, error=str(e))
+                    log.error(f"Translation failed, Skipping Language", text=trans_text, target_language=target_language, video_id=video_id, error=str(e))
                     return
 
                 #translated = translate_with_tenacity(source=source_json['language'], target=target_language, text=trans_text)                   
                                 
                 translated_text.append({"text":translated,'original_duration':snip['duration'], 'start':snip['start']})
+                translated_text.append({"text":translated,'original_duration':snip['duration'], 'start':snip['start']})
                 trans_text = ""
+            
+            log.info("Translated",  target_language=target_language, video_id=video_id)
             
             log.info("Translated",  target_language=target_language, video_id=video_id)
 
             json_data = {'video_id':video_id,'original_language':source_json['language'],'language':target_language,'snips':translated_text}
 
             with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "w", encoding="utf-8") as json_file:
+            with open(f"{root_dir}{target_language}/{video_id}.{target_language}.json", "w", encoding="utf-8") as json_file:
                 json.dump(json_data, json_file, indent=4)
     
         audio_parts = []
         file_parts = []
+        start = 0
         start = 0
 
         # Create voice
         for key, value in enumerate(json_data['snips']):
             if os.path.exists(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav"):
                 file_parts.append(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
+                tts_audio =AudioSegment.from_wav(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
+                start += tts_audio.duration_seconds
                 tts_audio =AudioSegment.from_wav(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav")
                 start += tts_audio.duration_seconds
                 continue
@@ -259,15 +292,33 @@ def process_language(source_json, target_language):
                  # we'll append silence to the start and end of the audio and it's a bit off possibly because of the TTS speed and different langages
                 silence_duration = silence_duration * .90 / 2
                 log.info(f"Appending voice file Silence to start & end", key=key,of=len(json_data['snips'])-1 , target_language=target_language,video_id=video_id, silence_duration=silence_duration)
+            
+            log.info("Timing", key=key, Time=start, Start=value['start'])
+            
+            if start < value['start']:
+                silence_duration = (value['start'] - start) * 1000 
+                
+                if start == 0:
+                    silence_duration /= 2 #not all of it for the first one
+                 
+                 # we'll append silence to the start and end of the audio and it's a bit off possibly because of the TTS speed and different langages
+                silence_duration = silence_duration * .90 / 2
+                log.info(f"Appending voice file Silence to start & end", key=key,of=len(json_data['snips'])-1 , target_language=target_language,video_id=video_id, silence_duration=silence_duration)
                 shh = AudioSegment.silent(duration=silence_duration)
+                tts_audio = shh + tts_audio + shh
+                tts_audio.export(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav", format="wav")
                 tts_audio = shh + tts_audio + shh
                 tts_audio.export(f"{root_dir}{target_language}/{video_id}.{key}.{target_language}.wav", format="wav")
             
             start += tts_audio.duration_seconds
             
             log.info(f"Generated voice file", key=key,of=len(json_data['snips'])-1 , target_language=target_language,video_id=video_id)
+            start += tts_audio.duration_seconds
+            
+            log.info(f"Generated voice file", key=key,of=len(json_data['snips'])-1 , target_language=target_language,video_id=video_id)
             audio_parts.append(tts_audio)                  
         
+        log.info("Generated all voice files", target_language=target_language,video_id=video_id)
         log.info("Generated all voice files", target_language=target_language,video_id=video_id)
 
         # Combine the voice files into one
@@ -275,13 +326,16 @@ def process_language(source_json, target_language):
         combined.export(f"{root_dir}{target_language}/{video_id}.{target_language}.wav", format="wav")
                           
         log.info("Generated voice file for video ID", target_language=target_language,video_id=video_id)
+        log.info("Generated voice file for video ID", target_language=target_language,video_id=video_id)
         
         for f in file_parts:
             os.remove(f)
 
         log.info("Removed voice part files", target_language=target_language,video_id=video_id)
+        log.info("Removed voice part files", target_language=target_language,video_id=video_id)
 
     except Exception as e:
+        log.error("Error processing",  target_language=target_language,video_id=video_id, error=str(e))
         log.error("Error processing",  target_language=target_language,video_id=video_id, error=str(e))
 
 # Define the translation function with retry logic  not working for some reason
@@ -297,6 +351,7 @@ if (sys.flags.utf8_mode != 1):
 def load_config(config_path="config.json"):
     if os.path.exists(config_path):
         with open(config_path, 'r', encoding="utf-8") as f:
+        with open(config_path, 'r', encoding="utf-8") as f:
             return json.load(f)
     else:
         return {}
@@ -304,20 +359,24 @@ config = load_config()
 
 if ('ffmpeg_Path' in config) and (config['ffmpeg_Path'] != ""):
     AudioSegment.converter = config['ffmpeg_Path']
+if ('ffmpeg_Path' in config) and (config['ffmpeg_Path'] != ""):
+    AudioSegment.converter = config['ffmpeg_Path']
 
 # Get device
 device = "cuda" if torch.cuda.is_available() else "cpu"
+log.info(f"Using device: {device}")
 log.info(f"Using device: {device}")
 
 tts = TTS(model_name=config['Coqui-TTS']['model']).to(device)
 
 log.info(f"Using TTS model: {config['Coqui-TTS']['model']}")
+log.info(f"Using TTS model: {config['Coqui-TTS']['model']}")
 
 for channel_id in config['YOUTUBE']['CHANNELIDs']:
     log.info(f"Processing channel" ,channel_id=channel_id)
+    log.info(f"Processing channel" ,channel_id=channel_id)
     video_ids = get_video_ids_from_channel(config['YOUTUBE']['APIKEY'], channel_id)
+    log.info(f"Found {len(video_ids)} videos in channel",channel_id=channel_id)
     log.info(f"Found {len(video_ids)} videos in channel",channel_id=channel_id)
 
     process_transcripts(video_ids)
-
-
