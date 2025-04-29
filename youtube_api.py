@@ -114,7 +114,7 @@ def process_transcripts(video_ids):
                     if duration == 0:
                         start = snip.start
                     duration += snip.duration
-                    if (key == len(transcript.snippets)-1) or (snip.duration > 15) or (len( transcript.snippets[key+1].text + txt) > 512 ):
+                    if (key == len(transcript.snippets)-1) or (snip.duration > 15) or (len( transcript.snippets[key+1].text + txt) > 250 ):
                         original_text.append({"text":txt,'duration':duration, 'start':start})
                         txt = ""
                         duration = 0
