@@ -5,3 +5,4 @@ venv/
 .venv/
 Translations/
 *.log
+copy_files.ps1

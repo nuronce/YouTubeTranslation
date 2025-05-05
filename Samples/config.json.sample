@@ -25,11 +25,10 @@
                "tr":"226",
                "ja":"71",
                "hu":"224",
-               "ko":"95"
-                         
-        "cs":"186"-- decimals causing issues
-        "hi":"150" -- numbers not working 
-        
-}
+               "ko":"95",                        
+        "cs":"186"-- decimals causing issues, changing to words
+        "hi":"150" -- numbers not working, changing to words
+    },
+    "generate_audio": true
 
 }
